@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Component Test</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section id="area">
+		<h1>Titulo</h1>
+		<web-component id="wc">
+			<style>@import url('style-2.css');</style>
+			<h1>Titulo dentro do web component</h1>
+			<web-component id="wc-2">
+				<h1>Titulo dentro do web component 2</h1>
+			</web-component>
+		</web-component>
+	</section>
+	<script src="async-define.js"></script>
+	<script async src="events.js"></script>
+	<script async src="doc.js"></script>
+	<script async src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+http://stackoverflow.com/questions/16633057/is-it-possible-to-access-shadow-dom-elements-through-the-parent-document
+www.html5rocks.com/en/tutorials/webcomponents/customelements/?redirect_from_locale=pt

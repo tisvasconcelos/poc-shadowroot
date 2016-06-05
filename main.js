@@ -16,5 +16,9 @@ define(['doc'], function($){
 	console.log(wc);
 	//console.log(wcElement);
 	var parent = $('#wc').parent().first();
-	parent.insertAdjacentHTML('beforeend','<web-component id="wc-3"><style>@import url("style-2.css");</style><h1>teste</h1></web-component>');
+	parent.insertAdjacentHTML('beforeend','<web-component id="wc-3"><style>@import url("style-2.css");</style><h1>teste</h1><a href="#teste">click</a></web-component>');
+	$($($('#wc-3').first().shadowRoot).first().querySelector('a')).on('click', function(e){
+		e.preventDefault();
+		console.log('clicked!');
+	});
 });

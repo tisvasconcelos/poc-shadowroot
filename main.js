@@ -1,5 +1,5 @@
 define(['doc'], function($){
-	var proto = Object.create(HTMLElement.prototype);
+	var proto = Object.create(HTMLIFrameElement.prototype);
 	proto.createdCallback = function(){
 		var children = this.children;
 		var root = this.createShadowRoot();
